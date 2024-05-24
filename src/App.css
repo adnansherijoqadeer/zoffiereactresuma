@@ -1,0 +1,130 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Manrope:wght@200..800&display=swap");
+
+/* Global Typography */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Manrope", sans-serif;
+}
+
+.center-slider .slick-slide {
+  color: #fff;
+  height: 400px;
+  margin: 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.center-slider .slick-slide,
+.center-slider
+  .slick-slide[aria-hidden="true"]:not(.slick-cloned)
+  ~ .slick-cloned[aria-hidden="true"] {
+  transform: scale(0.8, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.center-slider .slick-center,
+.center-slider
+  .slick-slide[aria-hidden="true"]:not([tabindex="-1"])
+  + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1.1);
+}
+
+.center-slider .slick-current.slick-active {
+  transform: scale(1.1);
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 5;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #000;
+  font-size: 26px;
+}
+/* 
+@media (max-width: 768px) {
+  .resuma {
+    background-image: none;
+    margin: auto;
+  }
+
+  .center-slider .slick-slide,
+  .center-slider
+    .slick-slide[aria-hidden="true"]:not(.slick-cloned)
+    ~ .slick-cloned[aria-hidden="true"] {
+    transform: scale(0.8, 0.8);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .center-slider .slick-center,
+  .center-slider
+    .slick-slide[aria-hidden="true"]:not([tabindex="-1"])
+    + .slick-cloned[aria-hidden="true"] {
+    transform: scale(1.1);
+  }
+
+  .center-slider .slick-current.slick-active {
+    transform: scale(1.1);
+  }
+
+  .slick-next,
+  .slick-prev {
+    z-index: 5;
+  }
+
+  .slick-next {
+    right: 15px;
+  }
+
+  .slick-prev {
+    left: 15px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    color: #000;
+    font-size: 26px;
+  }
+
+} */
+
+
+
+/* Custom Select */
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("./assest/icons/arrow-down.svg");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px;
+  padding-right: 30px;
+}
+
+.custom-select::-ms-expand {
+  display: none;
+}
